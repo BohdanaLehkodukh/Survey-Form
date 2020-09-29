@@ -1,0 +1,125 @@
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--color-darkblue);
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(immediately.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.modal {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  outline: 0;
+}
+
+.tab {
+  background: #200122;
+  background: -webkit-linear-gradient(to bottom, #6f0000, #200122);
+  background: linear-gradient(to bottom, #6f0000, #200122);
+  padding: 40px 50px;
+  position: relative;
+  width: 100%;
+}
+
+.title {
+  color: #ffffff;
+  background: transparent;
+  opacity: 1;
+}
+
+.description {
+  color: #ffffff;
+  background: transparent;
+  opacity: 1;
+}
+
+.tab:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  overflow: visible;
+  top: 0;
+  left: 0;
+  background: linear-gradient(#085078, #1f5650);
+  opacity: 0.85;
+}
+
+.tab .nav-tabs {
+  border-bottom: none;
+  padding: 0 20px;
+  position: relative;
+}
+
+.tab .tab-content {
+  padding: 20px 0 0 0;
+  margin-top: 10px;
+  background: transparent;
+  z-index: 1;
+  position: relative;
+}
+
+.form-horizontal .form-group {
+  margin: 0 0 15px 0;
+  position: relative;
+}
+
+.form-horizontal .form-group label {
+  padding: 0 20px;
+  color: #7f8291;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.form-horizontal .form-control {
+  height: 40px;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 20px;
+  box-shadow: none;
+  padding: 0 20px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  transition: all 0.3s ease 0s;
+}
+
+.form-control option {
+  color: #000;
+}
+
+.input-textarea {
+  min-height: 120px;
+  width: 100%;
+  padding: 0.625rem;
+  resize: vertical;
+}
+
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background: #409f3a;
+  color: inherit;
+  border-radius: 2px;
+  cursor: pointer;
+}
